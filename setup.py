@@ -4,15 +4,12 @@ setup(
     name='django_limiter',
     description='Signed Cookie based limiting RPS module for Django',
     keywords='django rps limit',
-    py_modules=['django_limiter'],
-    version='1.0.0',
+    packages=['django_limiter'],
+    version='1.0.1',
     author='Roman Kitaev',
     author_email='t4k.kitaetz@gmail.com',
     url='https://github.com/deliro/django_limiter',
     license='BSD',
-    install_requires=[
-        'django>=1.8,<1.11',
-    ],
     classifiers=[
         'Development Status :: 4 - Beta',
         'Programming Language :: Python',
