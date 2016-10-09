@@ -21,12 +21,14 @@ Client can't properly change Limiter's cookie and abuse (read more about signing
 Installation
 ============
 Install from PyPI:
+
 .. code-block::
 
     $ pip install django_limiter
 
 
 Append ``'django_limiter'`` to your ``INSTALLED_APPS``:
+
 .. code-block:: python
 
     INSTALLED_APPS = [
@@ -35,6 +37,7 @@ Append ``'django_limiter'`` to your ``INSTALLED_APPS``:
     ]
 
 Insert ``'django_limiter.middleware.RateLimiter'`` **BEFORE** any other middleware into ``MIDDLEWARE`` setting (or ``MIDDLEWARE_CLASSES``):
+
 .. code-block:: python
 
     MIDDLEWARE = [
@@ -43,6 +46,7 @@ Insert ``'django_limiter.middleware.RateLimiter'`` **BEFORE** any other middlewa
     ]
 
 Add ``url(r'^limiter/', include(django_limiter.urls))`` to your url config:
+
 .. code-block:: python
 
     import django_limiter
