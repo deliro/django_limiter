@@ -1,0 +1,14 @@
+<html>
+  <head>
+    <title>Processing request</title>
+  </head>
+  <body>
+    Please wait...
+    <script>
+      var redirect = function(path) {
+        window.location = path;
+      }
+      setTimeout(redirect, {{ timeout }}, '{{ path }}');
+    </script>
+  </body>
+</html>
