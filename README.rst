@@ -25,6 +25,7 @@ Install from PyPI:
 
     $ pip install django_limiter
 
+
 Append ``'django_limiter'`` to your ``INSTALLED_APPS``:
 .. code-block:: python
 
@@ -52,17 +53,18 @@ Add ``url(r'^limiter/', include(django_limiter.urls))`` to your url config:
         url(r'^limiter/', include(django_limiter.urls)),
     ]
 
-
 Configuration
 =============
 Here is several settings you can set:
+
 ``LIMITER_COOKIE_NAME`` — The name of the cookie. Default: **'limiter'**
 
 ``LIMITER_INTERVAL`` — The time (in seconds, can be float) client must wait before he can send next request. Default: **0.333**
 
 ``LIMITER_TEMPLATE_NAME`` — The name of the template for page to which the client gets temporarily. This page should redirect client to requested page after ``LIMITER_INTERVAL`` seconds pass. Template receives ``'timeout'``, ``'path'`` and ``'request'`` context.
 
-``LIMITER_EXCEPT`` — List of URLs Limiter must except. You shouldn't add root (``'/'``) into this list. Default: **[]**:
+``LIMITER_EXCEPT`` — List of URLs Limiter must except. You shouldn't add root (``'/'``) into this list. Default: **[]**
+
 .. code-block:: python
 
     LIMITER_EXCEPT = ['/my/custom/path', reverse_lazy('or-lazy-reverse')]
