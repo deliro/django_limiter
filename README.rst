@@ -2,6 +2,10 @@
 Django Limiter
 ==============
 
+.. image::
+    https://img.shields.io/pypi/v/django_limiter.svg
+    :target: https://pypi.python.org/pypi/django_limiter
+
 Django Limiter is a Signed Cookie based RPS (Requests per second) limiter.
 
 
