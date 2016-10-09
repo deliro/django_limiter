@@ -1,10 +1,10 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 setup(
     name='django_limiter',
     description='Signed Cookie based limiting RPS module for Django',
     keywords='django rps limit',
-    packages=['django_limiter'],
+    packages=find_packages(),
     version='1.0.1',
     author='Roman Kitaev',
     author_email='t4k.kitaetz@gmail.com',
